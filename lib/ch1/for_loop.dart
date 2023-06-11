@@ -48,9 +48,10 @@ class ForLoop {
     }
 
     // for문 만들기 : enhanced
-    /*for(Double value in list2){
-    print(list2[value]); // 오류남. 왜지?
-  } */
+    for(double value in list2){  // double은 소문자로 써야 됨. 대문자로 썼더니 오류 남.
+    //print(list2[value]); // 오류남. 왜지? value를 list2[] 에 담아서 오류 남.
+    print(value); // 오류남. 왜지?
+  }
     for (var d in list2){     // 이렇게 써야 됨.
       print("enhanced value : $d");
     }
