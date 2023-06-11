@@ -7,6 +7,7 @@
 
 import 'package:flutter_no1/ch1/for_loop.dart';
 import 'package:flutter_no1/ch2/coffee/americano.dart';
+import 'package:flutter_no1/ch2/coffee/latte.dart';
 import 'package:flutter_no1/ch2/person.dart';
 import 'package:flutter_no1/ch2/product.dart';
 import 'package:flutter_no1/main.dart';
@@ -63,4 +64,10 @@ void main() {
 
   Americano americano = Americano("뺵다방",false,8000,false);
   americano.sale();
+  americano.service();
+
+  Latte latte = Latte("라떼",true,2000,false);
+  latte.sale();
+  latte.service();
+  latte.refund();
 }
