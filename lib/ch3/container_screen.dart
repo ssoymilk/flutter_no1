@@ -16,21 +16,21 @@ class ContainerScreen extends StatelessWidget {
           child: const Text(
             "컨데이너",
             style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
             ),
           ),
           alignment: Alignment.bottomCenter,
           padding: const EdgeInsets.all(10),
           //margin: EdgeInsets.all(30),
-          
+
           /// decoration 사용시 밖에서 color 사용 불가, 안으로 넣어야 됨
           decoration: BoxDecoration(
             color: Colors.cyanAccent,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color : Colors.black,
-              width : 2,
+              color: Colors.black,
+              width: 2,
             ),
             gradient: const LinearGradient(
                 begin: Alignment.topLeft,
@@ -47,10 +47,10 @@ class ContainerScreen extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.shade300,
-               // color: Colors.grey.withOpacity(0.4),  // 투명도 주기, withAlpha 도 가능.
+                // color: Colors.grey.withOpacity(0.4),  // 투명도 주기, withAlpha 도 가능.
                 blurRadius: 10,
                 spreadRadius: 10,
-                offset: Offset(10,10),
+                offset: Offset(10, 10),
                 blurStyle: BlurStyle.normal, // inner, outer, normal, solid,
               ),
             ],
